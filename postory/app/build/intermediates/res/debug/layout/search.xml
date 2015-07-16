@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <GridView
+         android:id="@+id/gridView1"
+         android:layout_width="fill_parent"
+         android:layout_height="350dip"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:gravity="center"
+         android:horizontalSpacing="4dip"
+         android:numColumns="3"
+         android:padding="4dip"
+         android:stretchMode="columnWidth"
+         android:verticalSpacing="4dip" >
+     </GridView>
+
+     <TextView
+         android:id="@+id/message"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/gridView1"
+         android:layout_alignLeft="@+id/location"
+         android:layout_marginLeft="74dp"
+         android:visibility="gone" />
+
+     <Button
+         android:id="@+id/search"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="18dp"
+         android:background="@drawable/ic_action_search" />
+
+     <EditText
+         android:id="@+id/location"
+         android:layout_width="280dip"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/search"
+         android:layout_toLeftOf="@+id/search"
+         android:ems="10"
+         android:hint="請輸入地點"
+         android:inputType="text" />
+
+</RelativeLayout><!-- From: file:/Users/chenpusheng/AndroidStudioProjects/postory/app/src/main/res/layout/search.xml -->
